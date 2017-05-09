@@ -13,5 +13,4 @@ table-layout:fixed;
 .td_title{width: 300px; overflow: hidden;text-align: center;}
 .td_tr,.td_th{height:30px;line-height: 30px;text-align: left;}
 .td_th{font-weight: bold;color:blueviolet;text-align: center;}
-
 table td,table th{border:1px solid #666666; padding: 2px 4px;}

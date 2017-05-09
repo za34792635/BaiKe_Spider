@@ -12,6 +12,7 @@ class HtmlParser(object):
         new_urls=self._get_new_urls(page_url,soup)
         new_data=self._get_new_data(page_url,soup)
         return new_urls,new_data
+    #获取出来链接放入新URL库
     def _get_new_urls(self,page_url,soup):
         new_urls=set()
         links=soup.find_all('a',href=re.compile(r"/item/"))
@@ -20,7 +21,9 @@ class HtmlParser(object):
             new_full_url=urllib.parse.urljoin(page_url,new_url)
             new_urls.add(new_full_url)
         return  new_urls
+
 #<dd class="lemmaWgt-lemmaTitle-title"><h1>Python</h1>
+#获取新的内容
     def _get_new_data(self,page_url,soup):
         res_data={}
         res_data['url']=page_url
