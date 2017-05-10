@@ -1,9 +1,6 @@
 # python 爬虫爬取百度百科1000条
 
-### python版本
-
-3.6
-
+![](https://img.shields.io/badge/Python-3.6-blue.svg)
 ### 爬虫架构
 
 爬虫架构分为调度器 URL管理器 下载器 解析器 应用
